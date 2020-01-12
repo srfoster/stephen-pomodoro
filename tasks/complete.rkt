@@ -226,3 +226,26 @@
         editing
         breakdown
         work))
+
+(define sara:next-tech-steps
+  (task "Sara pair programming: Next tech steps"
+        meeting
+        work))
+
+(define improve-calendar-ui-1
+  (task "Make calendar more useable"
+        #:data "Colors?  Smaller buttons.  Better time layout.  Etc."
+        work
+        meta))
+
+(define breakdown:tpes-training-process
+  (task "Create tasks for how the 1st draft of the automated tutoring system will be used to deliver trained coaches for TPES (Emily and Mona)"
+        #:data "Includes: Do new draft of classmaps page, to reflect our communication with E&M"
+        work
+        breakdown))
+
+(define breakdown:online-tutoring-system
+  (task "Create tasks for automated online tutoring system"
+        work
+        breakdown))
+

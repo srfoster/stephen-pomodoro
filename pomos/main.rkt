@@ -147,6 +147,78 @@
     ;11
     (pomo meta-engine-hotswap-story)))
 
+(define thursday-jan-9-2020
+  (list
+    ;0
+    (done morning-todos-jan-9-2020)
+
+    ;1
+    (pomo fix-calendar-dates)
+
+    ;2
+    (done fix-calendar-dates #:time 16)
+    (pomo put-all-tasks-on-calendar #:time 9)
+
+    ;3
+    (done can-we-split-up-stories? #:time 1)
+    (done put-all-tasks-on-calendar #:time 8)
+
+    ;4
+    (done big-picture-jan-9-2020)
+
+    ;5
+    (done sara:next-tech-steps)
+
+    ;6
+    (done edit-stories)
+
+    ;7
+    (done jan-9-2020-take-break-1)
+
+    ;8
+    (pomo mc-classmaps-tickets)
+
+    ;9
+    (done mc-classmaps-tickets)
+
+    ;10
+    (done mc-classmaps-tickets-2)
+
+    ;11
+    (done mc-classmaps-tickets-2)
+    
+    ;Evening
+    (pomo breakdown:stripe->db)
+    (done breakdown:stripe->db)
+    ))
+
+(define friday-jan-10-2020
+  (list
+    ;1
+    (pomo clear-space-on-cb)
+
+    ;2
+    (done morning-todos-jan-10-2020)
+    (done fix-up-black-cbs)
+
+    ;3
+    (done improve-calendar-ui-1)
+
+    ;4
+    (done pomo-bug:something-not-removing
+          #:time 10)
+    (pomo breakdown:online-tutoring-system
+          #:time 15)
+
+    ;5
+    (done breakdown:online-tutoring-system)
+    (done breakdown:tpes-training-process)
+
+    ;6
+    ;(pomo automated-training:way-to-define-course-curric)
+
+    ))
+
 
 (define past-pomos
   (list 
@@ -155,4 +227,8 @@
     friday-jan-3-2020
     monday-jan-6-2020
     tuesday-jan-7-2020
-    wednesday-jan-8-2020))
+    wednesday-jan-8-2020
+    thursday-jan-9-2020
+    friday-jan-10-2020))
+
+

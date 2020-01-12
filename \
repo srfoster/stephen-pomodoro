@@ -1,0 +1,53 @@
+#lang racket
+
+(provide (all-defined-out))
+
+(require (prefix-in w: website)
+         pomodoro
+         pomodoro/renderer
+         "../tags.rkt")
+
+(define breakdown:tpes-training-process
+  (task "Create tasks for how the 1st draft of the automated tutoring system will be used to deliver trained coaches for TPES (Emily and Mona)"
+        #:data "Includes: Do new draft of classmaps page, to reflect our communication with E&M"
+        work
+        breakdown))
+
+(define breakdown:online-tutoring-system
+  (task "Create tasks for automated online tutoring system"
+        work
+        breakdown))
+
+
+(define automated-training:way-to-define-course-curric
+  (task "Automated Training: Attach curriculum (and langs) to courses"
+        #:data "Value: Paves the way to communicate with parents, students, and coaches via Classmaps/Sequences."
+        work))
+
+(define automated-training:way-to-attach-coaches-to-courses
+  (task "Automated Training: Attaching coaches to courses"
+        #:data "Value: Helps us know what maps/langs coaches should train on."
+        work))
+
+(define automated-training:way-to-define-training-milestones
+  (task "Automated Training: For some coach, display what their training story ought to be."
+        #:data "Value: Communicate with coaches what they must do."
+        work))
+
+(define automated-training:way-to-log-training-milestone-completion
+  (task "Automated Training: For some coach, log the completion of some milestone."
+        #:data "Value: Communicate with meta-coaches what their coach-students have done.  Communicate with coaches what their progress is."
+        work))
+
+
+
+
+(define automated-training:breakdown:drive-training-automatically
+  (task "Automated Training: Drive training through email/slack/etc."
+        #:data "Outgoing: Welcome emails, reminders about what to do, etc.  Incoming: "
+        work))
+
+
+
+
+

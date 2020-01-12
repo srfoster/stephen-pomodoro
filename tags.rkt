@@ -18,3 +18,7 @@
 (define breakdown (tag "Breakdown"))
 (define meeting (tag "Meeting"))
 (define extension (tag "Extension"))
+
+(define music (tag "Music"))
+
+

@@ -13,13 +13,6 @@
         work))
 
 
-(define breakdown:tpes-training-process
-  (task "Create tasks for how the 1st draft of the automated tutoring system will be used to deliver trained coaches for TPES (Emily and Mona)"
-        #:data "Includes: Do new draft of classmaps page, to reflect our communication with E&M"
-        work
-        breakdown))
-
-
 
 (define mc-classmaps-tickets-2
   (task "Cleanup classmaps and make them a better comm tool."
@@ -30,10 +23,6 @@
         breakdown
         work))
 
-(define breakdown:online-tutoring-system
-  (task "Create tasks for automated online tutoring system"
-        work
-        breakdown))
 
 
 (define write-writer-guidelines
@@ -56,5 +45,87 @@
 (define fix-pomo-calendar-months
   (task "Pomo calendar is broken.  Jan 1 event shows up in Feb"
         work))
+
+
+(define improve-calendar-ui-2
+  (task "Make calendar more useable"
+        #:data "Colors?  Smaller buttons.  Better time layout.  Etc."
+        work
+        meta))
+
+
+(define breakdown:training-content-creation-todos
+  (task "Training content.  Breakdown"
+        #:data "Organization of mc-classmaps.  Schedule book1, book2, book3 creation."
+        breakdown
+        work))
+
+(define breakdown:training-delivery-system-todos
+  (task "Training delivery.  Breakdown"
+        #:data "Start a system for tracking people.  Document.  Make further TODOs.  Figure out how it links to training content."
+        breakdown
+        work))
+
+(define meta-engine-hotswap-story
+  (task "Meta-Engine hotswap: Document it.  Blog it.  Story mode it."
+        work))
+
+(define clear-space-on-cb
+  (task "Clear space: Need more Gigs"))
+
+(define morning-todos-jan-10-2020 
+  (task "Morning todos"
+        work
+        meta))
+
+(define fix-up-black-cbs
+  (task "Put black CBs back into normal state"
+        work))
+
+
+(define breakdown:stripe->db
+  (task "Stripe to DB: Breakdown"
+        #:data "Capture webhooks.  Dockerize thigns.  Racket webserver, microservice."
+        work))
+
+
+(define stripe->db:communication-poc
+  (task "Stripe to DB: End to end spike"
+        #:data "Trigger a stripe webhook, catch it in a Racket server, all inside a docker container."
+        work))
+
+
+(define stripe->db:database-poc
+  (task "Stripe to DB: Add db"
+        #:data "Put data into a local SQLite db.  Get the schema right."
+        work))
+
+(define stripe->db:database-prod
+  (task "Stripe to DB: DB in separate Docker"
+        #:data "Move to postgress.  Separate DB from server."
+        work))
+
+(define summer-curric-meeting-1
+  (task "Meet about summer curric"
+        work
+        meeting))
+
+(define set-up-midi-recording
+  (task "Set up MIDI recording" ))
+
+(define pomo-bug:something-not-removing
+  (task "Pomo bug: (done ...) not removing a scheduled item."
+        meta))
+
+
+(define tickets-from-mona-feedback
+  (task "Look at Mona Feedback notes.  Create tickets."
+        work))
+
+
+
+(define exercise
+  (task "Exercise"))
+
 
 
