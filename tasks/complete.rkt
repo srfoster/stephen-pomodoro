@@ -249,3 +249,8 @@
         work
         breakdown))
 
+(define redo-task-wall
+  (task "Redo task wall"
+        #:data "Really an excuse to: Intro pomodoro game to office; Refactor teams"
+        meta
+        work))

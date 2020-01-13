@@ -5,8 +5,63 @@
 (require pomodoro
          "../calendar.rkt"
          gregor
+         (prefix-in w: website/bootstrap)
          "../tasks.rkt")
 
+(define jan-13-2020
+  (list
+
+    (schedule automated-training:log-progress-with-mona-and-emily-1
+              #:start (moment 2020 1 13 9)
+              #:duration 0.5)
+
+    (schedule time-management
+              #:start (moment 2020 1 13 10)
+              #:duration 0.5)
+
+    (schedule big-picture
+              #:start (moment 2020 1 13 10)
+              #:duration 0.5)
+
+    (schedule meeting:sara
+              #:start (moment 2020 1 13 10 30)
+              #:duration 0.5
+              #:data "Follow up re: Mona/Emily...")
+
+    (schedule fix-pomo-calendar-months
+              #:start (moment 2020 1 13 11)
+              #:duration 0.5)
+
+
+    (schedule tickets-from-mona-feedback
+              #:start (moment 2020 1 13 11 30)
+              #:duration 0.5)
+
+
+    ))
+
+(define jan-12-2020
+  (list
+    (schedule clear-space-on-cb
+              #:start (moment 2020 1 12 12)
+              #:duration 0.5)
+    
+    (schedule improve-calendar-ui-2
+              #:start (moment 2020 1 12 12)
+              #:duration 2.75)
+
+    (schedule exercise
+              #:start (moment 2020 1 12 15)
+              #:duration 1)
+
+    (schedule practice-piano
+              #:start (moment 2020 1 12 19)
+              #:duration 1
+              #:data 
+              (w:div
+                (w:a w:href: "https://stephen-public-stuff.s3.amazonaws.com/First+Midi+Composition.band.zip"
+                     "MIDI Thingy"))) 
+    ))
 
 
 (define jan-9-2020
@@ -104,11 +159,6 @@
     ))
 
 
-(define jan-12-2020
-  (list
-    (schedule clear-space-on-cb
-              #:start (moment 2020 1 12 12)
-              #:duration 0.5)))
 
 
 (define past-events 
@@ -117,7 +167,7 @@
     jan-10-2020
     jan-11-2020
     jan-12-2020
-    ))
+    jan-13-2020))
 
 
 

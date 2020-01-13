@@ -29,6 +29,7 @@
 
 (define pad (task ""))
 (define (event-pad events)
+
   (define (pad-date date)
     (define year (->year date))
     (define month (->month date))
@@ -101,12 +102,10 @@
                       (tab-nav-link href: "#past" "Past")
 
                       (active-tab-pane id: "future"
-                        (task-calendar 
-                          (event-pad future-events)
-                          '()))
+                        (task-calendars
+                          (event-pad future-events)))
                       (tab-pane id: "past"
-                        (task-calendar 
-                          (event-pad past-events )
-                          '())))))))
+                        (task-calendars
+                          (event-pad past-events ))))))))
 
 

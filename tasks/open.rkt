@@ -1,4 +1,4 @@
-#lang racket
+#lang at-exp racket
 
 (provide (all-defined-out))
 
@@ -29,11 +29,6 @@
   (task "Make writer's guidelines"
         work))
 
-(define redo-task-wall
-  (task "Redo task wall"
-        #:data "Really an excuse to: Intro pomodoro game to office; Refactor teams"
-        meta
-        work))
 
 (define breakdown:email-flows 
   (task "Breakdown: Email flows.  Generic workflow language tech."
@@ -122,10 +117,78 @@
   (task "Look at Mona Feedback notes.  Create tickets."
         work))
 
+(define time-management
+  (task "Plan the day, plan the week, plan the month"
+        meta
+        work))
+
 
 
 (define exercise
-  (task "Exercise"))
+  (task "Exercise"
+        #:data
+        (w:div
+          (w:p "Valid activities:")
+          (w:ol 
+            (w:li "Thinking about benefits of exercise.  Anything that mentally pumps you up.")
+            (w:li "Moving body.")
+            (w:li "Reflecting on movement of body.")
+            (w:li "Reflecting on goals of body.")
+            (w:li "Reflecting on recent exercise."))
+          (w:p "Current routine:")
+          (w:ol 
+            (w:li "Jumping Jacks"))
+          (list
+            (w:p 
+              'class: "codepen" 'data-height: "265" 'data-theme-id: "default" 'data-default-tab: "css,result" 'data-user: "LauraNK" 'data-slug-hash: "rxWLMy" 'style: "height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" 'data-pen-title: "Tabata/workout timer")
+            (w:script 'async: #t 'src: "https://static.codepen.io/assets/embed/ei.js"))
+
+            
+          )))
 
 
+(define big-picture
+  (task "Big picture meditation"
+        #:data 
+        (list
+         (w:p "Are the tasks this day/month/week appropriate for the big picture?")
+         (w:ul
+          (w:li "Training people (teachers) online across the world")
+          (w:li "Running courses for children across the world"))
+         (w:p "End of week goal: Backend online, deployed.  Dev/prod.  Tracks courses, curriculum, and training."))
+        work
+        meta))
 
+
+(define backend:sketch-out-architecture
+  (task "Backend: Architecting"
+        #:data 
+        (w:div 
+          (w:p "TODO: Make a big list of tickets.  Sort into milestones.  Figure out what to finish this week.  What's the minimum we need to do to help shed light on distributed teacher training's business logic?")
+          (w:p "Anything that can be its own self-contained package should be.  A state machine for example?  Such packages should feel empowered to create their own database tables and seeds.  These should get pulled into the consuming pacakge's (e.g. mc-data's) db management flow.")
+          (w:p "No micro-services.  Then again, it does make sense to have a self-contained service that is highly-focused on our data, it's associations, and the REST API.  We can build UI/front-end services on top of that")
+          (w:ul
+             (w:li "mc-data is just for JSON/S-Exp API?")
+             (w:li "Minimal scaffolding")
+             (w:li "Other services/apps can provide various 'views/lenses' on the data")
+             (w:li "Document it like a REST API.  (NOTE: Is it cool that other developers could use the API?  Students, for example???)")
+             (w:li "Security via 'roles' -- i.e. API keys.  Need way of defining security policies") ))
+        work))
+
+(define meeting:all-hands
+  (task "Meeting: All hands"
+        #:data "Announce change.  1-on-1 meetings?"
+        work
+        meta))
+
+
+(define break
+  (task "Break"))
+
+
+(define unstructured
+  (task "Unstructured"))
+
+
+(define meeting:sara
+  (task "Meeting: Sara"))

@@ -10,74 +10,36 @@
          "./schedule/past.rkt")
 
 
-(define jan-12-2020
+(define jan-13-2020
   (list
-    
-    (schedule improve-calendar-ui-2
-              #:start (moment 2020 1 12 12)
+
+    (schedule backend:sketch-out-architecture 
+              #:start (moment 2020 1 13 12)
+              #:duration 0.5)
+
+    (schedule break
+              #:start (moment 2020 1 13 12 30)
+              #:duration 0.5
+              #:data "Get psyched to do more backend work")
+
+    (schedule automated-training:way-to-define-course-curric
+              #:start (moment 2020 1 13 13)
+              #:duration 1)
+
+    (schedule automated-training:way-to-attach-coaches-to-courses
+              #:start (moment 2020 1 13 14)
+              #:duration 1)
+
+    (schedule breakdown:make-1-new-summer-k2-clicker-lang
+              #:start (moment 2020 1 13 15)
               #:duration 0.5)
 
     (schedule exercise
-              #:start (moment 2020 1 12 13)
+              #:start (moment 2020 1 13 16 30)
               #:duration 1)
 
     (schedule stripe->db:communication-poc
               #:start (moment 2020 1 12 18)
-              #:duration 1)
-
-    (schedule practice-piano
-              #:start (moment 2020 1 12 19)
-              #:duration 1
-              #:data 
-              (w:div
-                (w:a w:href: "https://stephen-public-stuff.s3.amazonaws.com/First+Midi+Composition.band.zip"
-                     "MIDI Thingy"))) 
-    (schedule record-asl
-              #:start (moment 2020 1 12 20)
-              #:duration 1)
-
-    ))
-
-(define jan-13-2020
-  (list
-    (schedule breakdown:make-1-new-summer-k2-clicker-lang
-              #:start (moment 2020 1 13 8 30)
-              #:duration 0.5)
-
-    (schedule redo-task-wall
-              #:start (moment 2020 1 13 8 30)
-              #:duration 0.5)
-
-    (schedule automated-training:log-progress-with-mona-and-emily-1
-              #:start (moment 2020 1 13 9)
-              #:duration 0.5)
-
-    (schedule fix-pomo-calendar-months
-              #:start (moment 2020 1 13 10)
-              #:duration 0.5)
-
-    (schedule tickets-from-mona-feedback
-              #:start (moment 2020 1 13 11)
-              #:duration 0.5)
-
-    (schedule write-writer-guidelines
-              #:start (moment 2020 1 13 12 30)
-              #:duration 1)
-
-    (schedule edit-stories
-              #:start (moment 2020 1 13 10)
-              #:duration 1)
-
-    (schedule meta-engine-hotswap-story
-              #:start (moment 2020 1 13 13 30)
-              #:duration 1)
-    
-    (schedule automated-training:breakdown:drive-training-automatically
-              #:start (moment 2020 1 13 14 30)
-              #:duration 1)
-
-    (schedule stripe->db:database-poc
-              #:start (moment 2020 1 13 18)
               #:duration 1)
 
     ))
@@ -85,45 +47,152 @@
 (define jan-14-2020
   (list
 
-    (schedule automated-training:way-to-define-course-curric
+    (schedule big-picture
+              #:start (moment 2020 1 14 8 30)
+              #:duration 0.5)
+
+    (schedule time-management
+              #:start (moment 2020 1 14 9)
+              #:duration 0.5)
+
+    (schedule backend:sketch-out-architecture 
+              #:start (moment 2020 1 14 10)
+              #:duration 0.5)
+
+    (schedule automated-training:way-to-define-training-milestones
+              #:start (moment 2020 1 14 10 30)
+              #:duration 1)
+
+
+    (schedule automated-training:way-to-log-training-milestone-completion
               #:start (moment 2020 1 14 11 30)
               #:duration 1)
 
-    (schedule automated-training:way-to-attach-coaches-to-courses
+    (schedule break
               #:start (moment 2020 1 14 12 30)
+              #:duration 0.5
+              #:data "Get psyched up to finish off the editing stuff below")
+    
+    (schedule write-writer-guidelines
+              #:start (moment 2020 1 14 13)
+              #:duration 1
+              #:data "Also, schedule todos related to continued content production.  If I'm switching to backend, we should make sure this doesn't slow down...")
+
+    (schedule meta-engine-hotswap-story
+              #:start (moment 2020 1 14 15)
               #:duration 1)
 
-    (schedule automated-training:way-to-define-training-milestones
-              #:start (moment 2020 1 14 13 30)
-              #:duration 0.5)
-
-
-    (schedule automated-training:way-to-define-training-milestones
-              #:start (moment 2020 1 14 14 30)
-              #:duration 0.5)
-
-    (schedule automated-training:way-to-log-training-milestone-completion
-              #:start (moment 2020 1 14 15)
-              #:duration 0.5)
 
     ;Evening
-    (schedule stripe->db:database-prod
-              #:start (moment 2020 1 14 18)
+
+    (schedule exercise
+              #:start (moment 2020 1 14 16 30)
+              #:duration 1)
+
+    (schedule stripe->db:database-poc
+              #:start (moment 2020 1 13 18)
               #:duration 1)
     ))
 
 (define jan-15-2020
   (list
+    (schedule big-picture
+              #:start (moment 2020 1 15 8 30)
+              #:duration 0.5)
+
+    (schedule time-management
+              #:start (moment 2020 1 15 9)
+              #:duration 0.5)
+
+    (schedule meeting:all-hands 
+              #:start (moment 2020 1 15 9 30)
+              #:duration 1)
+
+
+    (schedule backend:sketch-out-architecture 
+              #:start (moment 2020 1 15 12)
+              #:duration 0.5)
+
+    (schedule break
+              #:start (moment 2020 1 15 12 30)
+              #:duration 0.5
+              #:data "Get psyched to do more backend work")
+
+    (schedule automated-training:breakdown:drive-training-automatically
+              #:start (moment 2020 1 15 13)
+              #:duration 1)
+
+
+
+    (schedule exercise
+              #:start (moment 2020 1 15 16 30)
+              #:duration 1)
+
     (schedule stripe->db:database-prod
-              #:start (moment 2020 1 15 18)
+              #:start (moment 2020 1 14 18)
               #:duration 1)))
+
+(define jan-16-2020
+  (list
+
+
+    (schedule big-picture
+              #:start (moment 2020 1 16 8 30)
+              #:duration 0.5)
+
+    (schedule time-management
+              #:start (moment 2020 1 16 9)
+              #:duration 0.5)
+
+    (schedule break
+              #:start (moment 2020 1 16 12 30)
+              #:duration 0.5
+              #:data "Get psyched to do more backend work")
+
+    (schedule exercise
+              #:start (moment 2020 1 16 16 30)
+              #:duration 1)
+
+    (schedule stripe->db:database-prod
+              #:start (moment 2020 1 16 18)
+              #:duration 1)))
+
+(define jan-17-2020
+  (list
+
+    (schedule big-picture
+              #:start (moment 2020 1 17 8 30)
+              #:duration 0.5)
+
+    (schedule time-management
+              #:start (moment 2020 1 17 9)
+              #:duration 0.5)
+
+    (schedule break
+              #:start (moment 2020 1 17 12 30)
+              #:duration 0.5
+              #:data "Get psyched to do more backend work")
+
+    (schedule exercise
+              #:start (moment 2020 1 17 16 30)
+              #:duration 1)))
+
+
+(define jan-18-2020
+  (list
+
+
+    (schedule unstructured
+              #:start (moment 2020 1 18 7 30)
+              #:duration 12)
+    ))
+
 
 (define jan-20-2020
   (list
     (schedule automated-training:log-progress-with-mona-and-emily-2
               #:start (moment 2020 1 20 9)
               #:duration 0.5)
-    
     ))
 
 (define jan-27-2020
@@ -132,16 +201,25 @@
               #:start (moment 2020 1 27 9)
               #:duration 0.5)))
 
+(define feb-1-2020
+  (list
+    (schedule exercise
+              #:start (moment 2020 2 1 16 30)
+              #:duration 1)))
 
 
 (define future-events 
   (append
-    jan-12-2020
     jan-13-2020
     jan-14-2020
     jan-15-2020
+    jan-16-2020
+    jan-17-2020
+    jan-18-2020
     jan-20-2020
     jan-27-2020
+
+    feb-1-2020
     ))
 
 
