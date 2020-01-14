@@ -192,3 +192,11 @@
 
 (define meeting:sara
   (task "Meeting: Sara"))
+
+(define lindsey-life-meeting
+  (task "Lindsey life story/game meeting"
+        meta
+        #:data "Play the best game while writing the best story.  How do you do so?  By playing the best game about playing the best game and writing the best story about writing the best story."))
+
+(define drive-to-work
+  (task "Drive to work"))

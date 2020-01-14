@@ -71,3 +71,8 @@
 
 (define record-asl
   (task "Record ASL"))
+
+(define mc-data:mvp
+  (task "MC data MVP"
+        #:data "It needs to be an MVP.  So... ASAP: Create coaches, attach them to courses/currics, track training milestones.  BREAK THIS DOWN MORE"
+        work))

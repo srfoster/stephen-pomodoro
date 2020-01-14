@@ -10,13 +10,24 @@
 
 (define jan-13-2020
   (list
+    (schedule lindsey-life-meeting
+              #:start (moment 2020 1 13 7 30)
+              #:duration 0.5)
+
+    (schedule drive-to-work
+              #:start (moment 2020 1 13 8)
+              #:duration 0.5)
+
+    (schedule (task "Read Paul Graham essay.  Start working on todos")
+              #:start (moment 2020 1 13 8 30)
+              #:duration 0.5)
 
     (schedule automated-training:log-progress-with-mona-and-emily-1
               #:start (moment 2020 1 13 9)
               #:duration 0.5)
 
     (schedule time-management
-              #:start (moment 2020 1 13 10)
+              #:start (moment 2020 1 13 9 30)
               #:duration 0.5)
 
     (schedule big-picture
@@ -32,10 +43,22 @@
               #:start (moment 2020 1 13 11)
               #:duration 0.5)
 
-
     (schedule tickets-from-mona-feedback
               #:start (moment 2020 1 13 11 30)
               #:duration 0.5)
+
+    (schedule backend:sketch-out-architecture 
+              #:start (moment 2020 1 13 12)
+              #:duration 0.5)
+
+    (schedule break
+              #:start (moment 2020 1 13 12 30)
+              #:duration 0.5
+              #:data "Get psyched to do more backend work")
+
+    (schedule mc-data:mvp
+              #:start (moment 2020 1 13 13)
+              #:duration 3)
 
 
     ))
@@ -147,7 +170,6 @@
     (schedule automated-training:docker-db-poc
               #:start (moment 2020 1 10 14 0)
               #:duration 1)
-
     ))
 
 (define jan-11-2020
