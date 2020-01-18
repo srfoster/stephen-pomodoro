@@ -20,5 +20,6 @@
 (define extension (tag "Extension"))
 
 (define music (tag "Music"))
+(define milestone (tag "Milestone"))
 
 

@@ -1,4 +1,4 @@
-#lang racket
+#lang at-exp racket
 
 (provide past-events)
 
@@ -7,6 +7,290 @@
          gregor
          (prefix-in w: website/bootstrap)
          "../tasks.rkt")
+
+(define jan-16-2020
+  (list
+    (schedule time-management
+              #:start (moment 2020 1 16 8 30)
+              #:duration 0.5)
+
+    (schedule mc-data:mvp
+              #:start (moment 2020 1 16 9)
+              #:duration 0.5)
+
+    (schedule breakdown:online-courses
+              #:start (moment 2020 1 16 9 30)
+              #:duration 0.5
+              #:data @w:paras{
+                Small project.
+                Series of ~5x5-minute videos on of coding/learning topics.  
+                  * Progression: How optimized can a 5x5 throughput be?
+
+                
+                First set.  Title? "How not to learn to code"
+                  1) Introduction.  Weird course...
+                      Todo: Write script.
+                  2) Why code can't teach you to code...  Looking at Codecademy, Treehouse, etc...
+                  3) The language wars.  Which one to learn??
+                  4) Language learning.  Concepts.  Etc.
+                  5) Code for YOU!  Don't do it for someone else. :)
+
+              })
+
+    (schedule mc-data:mvp
+              #:start (moment 2020 1 16 10)
+              #:duration 0.5
+              #:data @w:paras{
+                TODO:
+                  Get finder tests to pass. 
+                  Add all office people seeds.  
+                  Make coach identity
+                     Write, people <-> identity tests
+                  Attach associated data, e.g. badges...
+              })
+
+
+    (schedule breakdown:online-courses
+              #:start (moment 2020 1 16 10 30)
+              #:duration 0.5
+              #:data @w:paras{
+                Introduction:
+ 
+                [Open on boring screen cast...] The first thing we're going to do is download a programming language, and write a "Hello, World--"
+
+
+                [Cut to stephen] Hello world!  No! The first thing we're doing in this course is NOT downloading a programming language, and it's NOT to write a hello world program.   
+
+                <<??>>
+
+                <start brag> Let's get serious for 10 seconds.  I've been coding for 30 years.  I've been a fullstack webdeveloper for 15 years.  I have a bachelors, masters, and Ph.D. in computer science.  I run a company ... </end brag>
+
+                [Jump cut...]  Sooooo boring.  That guy talks too much if you ask me.
+
+                Let's jump right in by taking a look at the top 3 reasons people who jump right in... fail.
+
+                [Insert some kind of epic fail meme.]
+
+                Reason #1.  They think they know what coding is, but they don't. ["They don't" Stamp]
+                Reason #2.  They think they know why the want to learn to code, but they don't.  ["They don't" Stamp]
+                Reason #3.  They think they know how to learn to code, but they don't.  ["They don't" Stamp]
+
+
+                The 5 videos in this series (starting with this one) will try to <<answer those questions.>>
+
+                And guess what? [Drum roll...] We're going to answer them with stories...  So don't download any software.  Don't write "Hello, World".  Just sit back... and listen.
+
+                [Disolve into a story...]
+
+                Yep.  That dude from the early 90s is me.  And yes, I am playing a Star Trek game.
+              })
+
+
+    (schedule mc-data:mvp
+              #:start (moment 2020 1 16 11)
+              #:duration 1
+              #:data @w:paras{
+                Add higher level logic 
+                Find real world project: People, badges, etc?
+                Start porting old models?  Timesheets, touchdowns, etc? (Ummm. no...)
+
+                Coaches/badges/curriculum/courses...
+
+                TODO: (EOD) Deploy this somewhere that it can start providing value -> Coach bios on metacoders.org...
+                  * Can track office staff going through training, making coach stories, etc...
+              })
+
+    (schedule meeting:sara
+              #:start (moment 2020 1 16 12)
+              #:duration 0.5
+              #:data @w:paras{
+                Met about (moblie) UI friction on mc-classmaps.
+                Sara will open 2 tickets.
+                Agreeed: Focus is on content creation now, though.
+              })
+
+    (schedule break
+              #:start (moment 2020 1 16 12 30)
+              #:duration 0.5
+              #:data "Get psyched to do more backend work")
+
+
+    (schedule mc-data:mvp
+              #:start (moment 2020 1 16 13)
+              #:duration 3
+              #:data @w:paras{
+                Coaches/badges/curriculum/courses...
+
+                TODO: (EOD) Deploy this somewhere that it can start providing value -> Coach bios on metacoders.org...
+                  * Can track office staff going through training, making coach stories, etc...
+              })
+
+   
+    (schedule (task "Buy computer")
+              #:start (moment 2020 1 16 16)
+              #:duration 1.5)
+
+    (schedule (task "Set up computer")
+              #:start (moment 2020 1 16 17 30)
+              #:duration 1.5)
+
+    (schedule (task "asl") 
+              #:start (moment 2020 1 16 19)
+              #:duration 1)
+
+    (schedule (task "piano")
+              #:start (moment 2020 1 16 20)
+              #:duration 1)
+ 
+  ))
+
+(define jan-15-2020
+  (list
+    (schedule big-picture
+              #:start (moment 2020 1 15 8 30)
+              #:duration 0.5)
+
+    (schedule meeting:all-hands 
+              #:start (moment 2020 1 15 9 30)
+              #:duration 1)
+
+    (schedule mc-data:mvp
+              #:start (moment 2020 1 15 10 30)
+              #:duration 2
+              #:data "Sketch out architecture")
+
+    (schedule break
+              #:start (moment 2020 1 15 12 30)
+              #:duration 0.5
+              #:data "Get psyched to do more backend work")
+
+    (schedule mc-data:mvp
+              #:start (moment 2020 1 15 13)
+              #:duration 3
+              #:data "Can we have a coach story service live by EOD?")
+
+    (schedule exercise
+              #:start (moment 2020 1 15 16 30)
+              #:duration 0.5
+              #:data "Book idea: Getting Shit Done While High.  Secrets of Cognitive Science for Potheads")
+
+    (schedule unstructured
+              #:start (moment 2020 1 15 17)
+              #:duration 1)
+    
+    (schedule !!!
+              #:start (moment 2020 1 15 18)
+              #:duration 0.5
+              #:data "Pre Lindsey leaving for her class")
+
+    (schedule time-management
+              #:start (moment 2020 1 15 18 30)
+              #:duration 0.5
+              #:data "TODO: Schedule online course creation.  Me vlogging on simple approachable everyday topics.")
+
+    (schedule breakdown:online-courses
+              #:start (moment 2020 1 15 19)
+              #:duration 0.5
+              #:data @w:paras{
+               Online Courses that provide maximal value to MetaCoders...
+                 Staring... me!
+
+                 @w:b{Time management strategy}
+
+                 Time during the day for recording? 
+                 Is it a full pivot to content production? 
+                 Or is it a wishy washy half-focus?
+                 It depends on if the backend stuff can be done quickly...
+                    Or if it can be done simultaneously...
+                      * Our actual business stories can generate material for the course?
+
+
+                 Anyway, it requires doing minimal work on the backend.  Don't build interfaces or tools that aren't necessary.
+                    Solve a real problem with it all ASAP
+                    TODO: List out the problems that we can solve right now with the software as is...   
+                       -> Automatic enrollments
+                       -> Employee tracking.  Hours.  Timesheets.  Etc.
+                       -> Teacher training.   
+                       -> Slackbot stuff.
+                    And schedule them!  Ask people at work to help with that.
+                    Have a data modeling session.
+                    Film it all...
+
+                 
+                 Pieces missing, which (I think!) we'll need for various stories: Mailer, JSON api, deployment, way for  
+                 But the real truth is in the actual usages of mc-data in the short term.  
+
+
+                 You can back-burner mc-data, but you can't back-burner the backend projects.  It's your responsibility (to yourself and others) to keep the crank of automation moving.
+
+
+                 Maybe we split the focus.  Like I'm doing now.  Evening project becomes... online courses.  I worked diligently on the book.  Now is about the time of year to be picking up a new long-term project.  Crank out those courses buddy!
+
+                 4:30 - 5:30 Exercise
+                 5:30 - 7/8/9 - Get famous on Udemy/Youtube.  Become a fantastic writer in a new medium.  Vlogging :)  I suspect this would open up thousands of doors...
+                    (Recursive, nested, meta videos.  Pullback and discus...)
+
+
+                 If there's not a lot of backend work, I can schedule in more videography and vice versa.  But I'll shoot for 50/50.
+
+                 Can loop in Lindsey -- she learns in the evening.  Maybe record our sessions.
+
+
+              })
+    ))
+
+
+(define jan-14-2020
+  (list
+    (schedule lindsey-life-meeting
+              #:start (moment 2020 1 14 7 30)
+              #:duration 0.5)
+
+    (schedule big-picture
+              #:start (moment 2020 1 14 8 30)
+              #:duration 0.5)
+
+    (schedule time-management
+              #:start (moment 2020 1 14 9)
+              #:duration 0.5)
+
+    (schedule backend:sketch-out-architecture 
+              #:start (moment 2020 1 14 9)
+              #:duration 0.5)
+
+    (schedule mc-data:mvp
+              #:start (moment 2020 1 14 9 30)
+              #:duration 2.5)
+
+    (schedule breakdown:make-1-new-summer-k2-clicker-lang
+              #:start (moment 2020 1 14 12)
+              #:duration 0.5)
+
+    (schedule break
+              #:start (moment 2020 1 14 12 30)
+              #:duration 0.5
+              #:data "Get psyched up to finish off the editing stuff below")
+    
+    (schedule mc-data:mvp
+              #:start (moment 2020 1 14 13)
+              #:duration 4)
+
+    (schedule shower
+              #:start (moment 2020 1 14 17)
+              #:duration 0.5)
+    
+    (schedule mc-data:mvp
+              #:start (moment 2020 1 14 18)
+              #:duration 1)
+
+    (schedule time-management
+              #:start (moment 2020 1 14 19)
+              #:duration 0.5)
+
+    (schedule shut-up-and-code
+              #:start (moment 2020 1 14 19)
+              #:duration 1)
+    ))
 
 (define jan-13-2020
   (list
@@ -60,7 +344,29 @@
               #:start (moment 2020 1 13 13)
               #:duration 3)
 
+    (schedule !!!
+              #:start (moment 2020 1 13 16 30)
+              #:duration 1)
 
+    (schedule time-management
+              #:start (moment 2020 1 13 17 30)
+              #:duration 0.5)
+
+    (schedule exercise
+              #:start (moment 2020 1 13 18)
+              #:duration 0.5)
+
+    (schedule unstructured
+              #:start (moment 2020 1 13 18 30)
+              #:duration 0.5)
+
+    (schedule practice-piano
+              #:start (moment 2020 1 13 19)
+              #:duration 0.5)
+
+    (schedule unstructured
+              #:start (moment 2020 1 13 19 30)
+              #:duration 1)
     ))
 
 (define jan-12-2020
@@ -189,7 +495,10 @@
     jan-10-2020
     jan-11-2020
     jan-12-2020
-    jan-13-2020))
+    jan-13-2020
+    jan-14-2020
+    jan-15-2020
+    jan-16-2020))
 
 
 

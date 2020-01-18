@@ -74,5 +74,29 @@
 
 (define mc-data:mvp
   (task "MC data MVP"
-        #:data "It needs to be an MVP.  So... ASAP: Create coaches, attach them to courses/currics, track training milestones.  BREAK THIS DOWN MORE"
+        #:data 
+        (w:div
+          (w:ol
+            (w:li
+              "A way for admins to create courses, coaches, curriculum, and various associations.")
+            (w:li
+              "Create a subset of actual/live data.")
+            (w:li
+              "A way for admins to log badges/milestones/progress/story for coaches in training (relative to various curriculum)")
+            (w:li
+              "A way to display a coach's story to them and the world")
+            (w:li
+              "A system into which we can put other models -- e.g. orders, enrollments, etc.")
+            (w:li
+              "Good docs and good tests, so admins can adapt to the changing needs of the business.")))
         work))
+
+
+(define breakdown:online-courses
+  (task "Breakdown online courses"
+        work
+        breakdown))
+
+
+
+

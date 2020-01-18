@@ -191,7 +191,8 @@
 
 
 (define meeting:sara
-  (task "Meeting: Sara"))
+  (task "Meeting: Sara"
+         work meeting))
 
 (define lindsey-life-meeting
   (task "Lindsey life story/game meeting"
@@ -200,3 +201,23 @@
 
 (define drive-to-work
   (task "Drive to work"))
+
+(define shut-up-and-code
+  (task "Shut up and code"))
+
+(define milestone-transition
+  (task "Milestone"
+        milestone))
+
+(define !!!
+  (task "!!!"
+        milestone))
+
+
+(define shower
+  (task "Shower"))
+
+(define psych-meeting
+  (task "Meet online with Gail, et al"))
+
+
