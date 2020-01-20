@@ -72,7 +72,7 @@
     (define (pad-hours from to)
       (map schedule-pad (range from to)))
 
-    (flatten (pad-hours 7 21)))
+    (flatten (pad-hours 6 21)))
 
   (define (moment->date m)
     (date

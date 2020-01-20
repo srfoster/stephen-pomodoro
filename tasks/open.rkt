@@ -221,3 +221,10 @@
   (task "Meet online with Gail, et al"))
 
 
+(define asl-meetup
+  (task "Shower"))
+
+(define piano-practice
+  (task "Piano Practice"))
+
+

@@ -8,6 +8,7 @@
          (prefix-in w: website/bootstrap)
          "../tasks.rkt")
 
+
 (define jan-19-2020
   (list
 
@@ -25,21 +26,30 @@
                  - Good better best
                  - Loving kindness meditation
 
+              }
+	      )
+
+    (schedule time-management
+              #:start (moment 2020 1 19 15 30)
+              #:duration 0.5
+              #:data @w:paras{
+	        Decided to start enforcing the wakeup routine and the after work routine.
               })
+
     ))
 
-(define jan-16-2020
+(define jan-17-2020
   (list
     (schedule time-management
-              #:start (moment 2020 1 16 8 30)
+              #:start (moment 2020 1 17 8 30)
               #:duration 0.5)
 
     (schedule mc-data:mvp
-              #:start (moment 2020 1 16 9)
+              #:start (moment 2020 1 17 9)
               #:duration 0.5)
 
     (schedule breakdown:online-courses
-              #:start (moment 2020 1 16 9 30)
+              #:start (moment 2020 1 17 9 30)
               #:duration 0.5
               #:data @w:paras{
                 Small project.
@@ -58,7 +68,7 @@
               })
 
     (schedule mc-data:mvp
-              #:start (moment 2020 1 16 10)
+              #:start (moment 2020 1 17 10)
               #:duration 0.5
               #:data @w:paras{
                 TODO:
@@ -71,7 +81,7 @@
 
 
     (schedule breakdown:online-courses
-              #:start (moment 2020 1 16 10 30)
+              #:start (moment 2020 1 17 10 30)
               #:duration 0.5
               #:data @w:paras{
                 Introduction:
@@ -107,7 +117,7 @@
 
 
     (schedule mc-data:mvp
-              #:start (moment 2020 1 16 11)
+              #:start (moment 2020 1 17 11)
               #:duration 1
               #:data @w:paras{
                 Add higher level logic 
@@ -121,7 +131,7 @@
               })
 
     (schedule meeting:sara
-              #:start (moment 2020 1 16 12)
+              #:start (moment 2020 1 17 12)
               #:duration 0.5
               #:data @w:paras{
                 Met about (moblie) UI friction on mc-classmaps.
@@ -130,13 +140,13 @@
               })
 
     (schedule break
-              #:start (moment 2020 1 16 12 30)
+              #:start (moment 2020 1 17 12 30)
               #:duration 0.5
               #:data "Get psyched to do more backend work")
 
 
     (schedule mc-data:mvp
-              #:start (moment 2020 1 16 13)
+              #:start (moment 2020 1 17 13)
               #:duration 3
               #:data @w:paras{
                 Coaches/badges/curriculum/courses...
@@ -147,19 +157,19 @@
 
    
     (schedule (task "Buy computer")
-              #:start (moment 2020 1 16 16)
+              #:start (moment 2020 1 17 16)
               #:duration 1.5)
 
     (schedule (task "Set up computer")
-              #:start (moment 2020 1 16 17 30)
+              #:start (moment 2020 1 17 17 30)
               #:duration 1.5)
 
-    (schedule asl 
-              #:start (moment 2020 1 16 19)
+    (schedule asl-meetup
+              #:start (moment 2020 1 17 19)
               #:duration 1)
 
-    (schedule piano
-              #:start (moment 2020 1 16 20)
+    (schedule piano-practice
+              #:start (moment 2020 1 17 20)
               #:duration 1)
  
   ))
@@ -518,7 +528,6 @@
     jan-13-2020
     jan-14-2020
     jan-15-2020
-    jan-16-2020
     jan-19-2020))
 
 
