@@ -8,6 +8,26 @@
          (prefix-in w: website/bootstrap)
          "../tasks.rkt")
 
+(define jan-19-2020
+  (list
+
+    (schedule exercise
+              #:start (moment 2020 1 16 14 30)
+              #:duration 0.5
+              #:data @w:paras{
+                 New resolution.  Run daily.  At least 5 minutes.
+                   - ___ is fine, if you run after.
+                   - Excuses are fine, if you do them and run immediately after.             
+                   - Excuses that prevent running are suspect
+
+                 After run.  Write down idea notes.
+                 - Positive self thoughts 
+                 - Good better best
+                 - Loving kindness meditation
+
+              })
+    ))
+
 (define jan-16-2020
   (list
     (schedule time-management
@@ -134,11 +154,11 @@
               #:start (moment 2020 1 16 17 30)
               #:duration 1.5)
 
-    (schedule (task "asl") 
+    (schedule asl 
               #:start (moment 2020 1 16 19)
               #:duration 1)
 
-    (schedule (task "piano")
+    (schedule piano
               #:start (moment 2020 1 16 20)
               #:duration 1)
  
@@ -498,7 +518,8 @@
     jan-13-2020
     jan-14-2020
     jan-15-2020
-    jan-16-2020))
+    jan-16-2020
+    jan-19-2020))
 
 
 

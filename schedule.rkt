@@ -13,6 +13,7 @@
          "./tasks.rkt"
          "./schedule/past.rkt")
 
+
 (define jan-16-2020
   (list
 
@@ -98,6 +99,7 @@
     jan-16-2020
     jan-17-2020
     jan-18-2020
+    jan-19-2020
     jan-20-2020
     jan-27-2020
 
