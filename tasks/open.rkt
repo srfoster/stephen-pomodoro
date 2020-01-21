@@ -227,4 +227,8 @@
 (define piano-practice
   (task "Piano Practice"))
 
+(define walk
+  (task "Walk"))
+
+
 

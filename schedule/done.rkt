@@ -11,32 +11,96 @@
 
 (define jan-20-2020
   (day 2020 1 20
-	(good-weekday #:morning-activity (schedule piano-practice
-					      #:start (moment 2020 1 20 7)
-					      #:duration 0.5)
-		 (schedule time-management
-			   #:start (at 8 30)
-			   #:duration 0.5
-                           #:data @w:paras{
-                             * Clean up papers   
-                             * Consolidate backend todos
-                               - Badges finished?  Course page finalize?
-                               - Set up db
-                               - data.metacoders.org
-                               - Collect stripe webook -> email receipts.  Protected backend views...  Protected db...
-                           })
+	(good-weekday 
+	  #:morning-activity (schedule piano-practice
+				       #:start (moment 2020 1 20 7)
+				       #:duration 0.5)
+	  #:exercise (schedule exercise
+			       #:start (at 16 30)
+			       #:duration 0.5
+			       #:data @w:paras{
+			       5 minute run??
+			       Did it!
 
-		 (schedule automated-training:log-progress-with-mona-and-emily-2
-			   #:start (moment 2020 1 20 9)
-			   #:duration 0.5)
+			       TODO: Learn all the landmarks.  Mind palace the route(s).
+			       * Learn to integrate inner thoughts with awareness of surroundings -> Recall thoughts later. 
 
-                 (schedule mc-data:mvp
-                           #:start (at 9 30)
-                           #:duration 2.5
-                           #:data "Get the production db set up")
+			       If you don't know what to think about.  Think about love.
+
+			       Is coding the art of making thoughts precise?  Or is it the process of giving us tools to figure out what our thoughts are?
+
+			       System stories?  Soft skills stories.
 
 
-                  )))
+			       })
+
+	  (schedule time-management
+		    #:start (at 8 30)
+		    #:duration 0.5
+		    #:data @w:paras{
+		    * Clean up papers   
+		    * Consolidate backend todos
+		    - Badges finished?  Course page finalize?
+		    - Set up db
+		    - data.metacoders.org
+		    - Collect stripe webook -> email receipts.  Protected backend views...  Protected db...
+		    })
+
+	  (schedule automated-training:log-progress-with-mona-and-emily-2
+		    #:start (moment 2020 1 20 9)
+		    #:duration 0.5)
+
+	  (schedule mc-data:mvp
+		    #:start (at 9 30)
+		    #:duration 2.5
+		    #:data "Get the production db set up")
+
+	  (schedule mc-data:mvp
+		    #:start (at 12)
+		    #:duration 0.5
+		    #:data "Research. Secure Stripe webhook...")
+
+	  (schedule mc-data:mvp
+		    #:start (at 12 30)
+		    #:duration 3.5
+		    #:data "Started: Secure Stripe webhook -> order records in db.  Customer identities.")
+
+          (schedule online-courses
+                    #:start (at 17 30)
+                    #:duration 2.5
+                    #:data 
+                    @w:paras{
+                      Topics to start with...
+
+                      Boring learn to code videos...
+                      Stop coding before you hurt yourself
+
+                      To cut from...
+                      https://www.youtube.com/watch?v=elfGmSxVhBQ
+                      https://www.youtube.com/watch?v=LCls16Tv8UE
+                      https://www.youtube.com/watch?v=VFH15wbUOiY
+                      https://www.youtube.com/watch?v=YBYmhWlk8o4
+                      https://www.youtube.com/watch?v=R2pIutTspQA
+                      https://www.youtube.com/watch?v=WKuNWrxuJ9g
+                      https://www.youtube.com/watch?v=RRubcjpTkks
+                      https://www.youtube.com/watch?v=tCAt8eEKPDc
+                      https://www.youtube.com/watch?v=hb7Q33ysCwI
+
+                      
+                      Meta topics.... How I made this video...
+
+                      Learning sciences...
+
+                      Language learning + coding  
+                      Spaced repetition 
+                      Lisp 
+                    }) 
+
+	  (schedule practice-piano 
+		    #:start (at 20)
+		    #:duration 1)
+
+	  )))
 
 (define jan-19-2020
   (list

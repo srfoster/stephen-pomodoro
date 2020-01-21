@@ -99,4 +99,6 @@
 
 
 
+(define online-courses
+  (task "Creation of educational video content"))
 

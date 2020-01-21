@@ -36,7 +36,7 @@
 
 
 	(schedule lindsey-life-meeting
-		  #:start (at 7)
+		  #:start (at 7 30)
 		  #:duration 0.5)
 
         afternoon-exercise)
