@@ -4,16 +4,45 @@
 
 (require pomodoro
          "../calendar.rkt"
+         "../util.rkt"
          gregor
          (prefix-in w: website/bootstrap)
          "../tasks.rkt")
 
+(define jan-20-2020
+  (day 2020 1 20
+	(good-weekday #:morning-activity (schedule piano-practice
+					      #:start (moment 2020 1 20 7)
+					      #:duration 0.5)
+		 (schedule time-management
+			   #:start (at 8 30)
+			   #:duration 0.5
+                           #:data @w:paras{
+                             * Clean up papers   
+                             * Consolidate backend todos
+                               - Badges finished?  Course page finalize?
+                               - Set up db
+                               - data.metacoders.org
+                               - Collect stripe webook -> email receipts.  Protected backend views...  Protected db...
+                           })
+
+		 (schedule automated-training:log-progress-with-mona-and-emily-2
+			   #:start (moment 2020 1 20 9)
+			   #:duration 0.5)
+
+                 (schedule mc-data:mvp
+                           #:start (at 9 30)
+                           #:duration 2.5
+                           #:data "Get the production db set up")
+
+
+                  )))
 
 (define jan-19-2020
   (list
 
     (schedule exercise
-              #:start (moment 2020 1 16 14 30)
+              #:start (moment 2020 1 19 14 30)
               #:duration 0.5
               #:data @w:paras{
                  New resolution.  Run daily.  At least 5 minutes.
@@ -37,6 +66,14 @@
               })
 
     ))
+
+
+(define jan-18-2020
+  (list
+    (schedule (task "Unstructured")
+              #:start (moment 2020 1 18 6 0)
+              #:duration 14
+              #:data "???")))
 
 (define jan-17-2020
   (list
@@ -173,6 +210,22 @@
               #:duration 1)
  
   ))
+
+
+(define jan-16-2020
+  (list
+    (schedule mc-data:mvp
+              #:start (moment 2020 1 16 9 0)
+              #:duration 7
+              #:data "Backend stuff.  I created this record on Jan 20, and I can't quite remember what I did.  But it was a pretty solid workday.  And I did finish off the next day (Friday) with a working MVP prototype, as planned -- mostly deployed...")
+
+    (schedule (task "???")
+              #:start (moment 2020 1 16 16 30)
+              #:duration 4.5
+              #:data "???")
+
+    ))
+
 
 (define jan-15-2020
   (list
@@ -528,7 +581,11 @@
     jan-13-2020
     jan-14-2020
     jan-15-2020
-    jan-19-2020))
+    jan-16-2020
+    jan-17-2020
+    jan-18-2020
+    jan-19-2020
+    jan-20-2020))
 
 
 
