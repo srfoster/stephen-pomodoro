@@ -23,20 +23,25 @@
 		   #:duration 0.5
 		   #:data "Walk in rain.")
 
-	 (schedule mc-data:mvp
+	 (schedule (task "Go to DMV")
 		   #:start (at 9)
+		   #:duration 1)
+		   
+
+	 (schedule mc-data:mvp
+		   #:start (at 10)
 		   #:duration 0.5
 		   #:data "Put up /our-coaches.html page.  Pull in data -> Number of badges?  Level?  Some kind of abstraction over the coach training story.  Add the real data for office staff + emily + mona")
 
 
 	 (schedule mc-data:mvp
-		   #:start (at 9)
+		   #:start (at 10 30)
 		   #:duration 3
 		   #:data "Finish: Stripe integration")
 
 	 (schedule mc-data:mvp
-		   #:start (at 12)
-		   #:duration 4
+		   #:start (at 13 30)
+		   #:duration 2.5
 		   #:data "Document all the things so far")
 
 	 )))
