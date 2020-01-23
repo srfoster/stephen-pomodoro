@@ -9,6 +9,79 @@
          (prefix-in w: website/bootstrap)
          "../tasks.rkt")
 
+(define jan-22-2020
+  (day 2020 1 22
+       (good-weekday
+	 #:morning-activity
+	 (schedule (task "Trying to call teladoc")
+		   #:start (at 7)
+		   #:duration 0.5)
+
+	 (schedule time-management
+		   #:start (at 8 30)
+		   #:duration 1)
+
+	 (schedule mc-data:mvp
+		   #:start (at 9 30)
+		   #:duration 1
+		   #:data "Blocker: mc-data Docker image won't build on my machine.  Debug...  Actually it's broken everywhere...")
+
+	 (schedule psych-meeting
+		   #:start (at 10 30)
+		   #:duration 1
+		   #:data "Prep Skype")
+
+	 (schedule psych-meeting
+		   #:start (at 11)
+		   #:duration 1)
+
+	 (schedule (task "Pharmacy.  Haircut.")
+		   #:start (at 12)
+		   #:duration 1)
+
+	 (schedule mc-data:mvp
+		   #:start (at 13)
+		   #:duration 0.5
+		   #:data "Fixing docker")
+	 
+	 (schedule mc-data:mvp
+		   #:start (at 13 30)
+		   #:duration 1
+		   #:data "Continue MVP authentication flow.  Users/roles/logins.  Whatever gets us going"))))
+
+(define jan-21-2020
+  (day 2020 1 21
+       (good-weekday 
+	 #:morning-activity
+	 (schedule walk
+		   #:start (at 7)
+		   #:duration 0.5
+		   #:data "Walk in rain.")
+
+	 (schedule (task "Go to DMV")
+		   #:start (at 9)
+		   #:duration 2.5)
+		   
+
+	 (schedule mc-data:mvp
+		   #:start (at 10)
+		   #:duration 0.5
+		   #:data "Put up /our-coaches.html page.  Pull in data -> Number of badges?  Level?  Some kind of abstraction over the coach training story.  Add the real data for office staff + emily + mona")
+
+
+	 (schedule mc-data:mvp
+		   #:start (at 11 30)
+		   #:duration 3
+		   #:data "MVP Stripe webhook")
+
+	 (schedule mc-data:mvp
+		   #:start (at 14 30)
+		   #:duration 1.5
+		   #:data "MVP authentication flow")
+
+
+	 )))
+
 (define jan-20-2020
   (day 2020 1 20
 	(good-weekday 
@@ -649,7 +722,9 @@
     jan-17-2020
     jan-18-2020
     jan-19-2020
-    jan-20-2020))
+    jan-20-2020
+    jan-21-2020
+    jan-22-2020))
 
 
 

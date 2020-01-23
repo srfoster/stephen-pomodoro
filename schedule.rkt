@@ -14,50 +14,35 @@
          "./tasks.rkt"
          "./schedule/past.rkt")
 
-(define jan-21-2020
-  (day 2020 1 21
-       (good-weekday 
-	 #:morning-activity
-	 (schedule walk
-		   #:start (at 7)
-		   #:duration 0.5
-		   #:data "Walk in rain.")
-
-	 (schedule (task "Go to DMV")
-		   #:start (at 9)
-		   #:duration 1)
-		   
-
-	 (schedule mc-data:mvp
-		   #:start (at 10)
-		   #:duration 0.5
-		   #:data "Put up /our-coaches.html page.  Pull in data -> Number of badges?  Level?  Some kind of abstraction over the coach training story.  Add the real data for office staff + emily + mona")
-
-
-	 (schedule mc-data:mvp
-		   #:start (at 10 30)
-		   #:duration 3
-		   #:data "Finish: Stripe integration")
-
-	 (schedule mc-data:mvp
-		   #:start (at 13 30)
-		   #:duration 2.5
-		   #:data "Document all the things so far")
-
-	 )))
 
 (define jan-22-2020
   (day 2020 1 22
+       (good-weekday
+
+	 ;Edit in yesterday's stuff
+	 ;Record more!
+
+	 ;Tomorrow, record more ASL.
+
+	 ;Schedule in the Gail et all demo
+
+
+	 ;Plan the pivot back to content.  After stripe orders collectable/viewable.
+	 )))
+
+(define jan-23-2020
+  (day 2020 1 23
 	(good-weekday
+	(schedule mc-data:mvp
+		  #:start (at 9)
+		  #:duration 0.5
+		  #:data "Improve docs")
+
 	 (schedule mc-data:mvp
-		   #:start (at 9)
-		   #:duration 2
+		   #:start (at 9 30)
+		   #:duration 1.5
 		   #:data "Task records.  Basic state machine: done or not done.  Unit tests.")
 
-	  (schedule psych-meeting
-		    #:start (at 11)
-		    #:duration 1)
-	  
 	 (schedule mc-data:mvp
 		   #:start (at 12)
 		   #:duration 1
@@ -82,12 +67,6 @@
 		   #:start (at 14 30)
 		   #:duration 2.5
 		   #:data "Write some scripts that I can go home and record.")
-	  )
-	))
-
-(define jan-23-2020
-  (day 2020 1 23
-	(good-weekday
 	  )))
 
 (define jan-24-2020
@@ -120,7 +99,6 @@
 
 (define future-events 
   (append
-    jan-21-2020
     jan-22-2020
     jan-23-2020
     jan-24-2020
